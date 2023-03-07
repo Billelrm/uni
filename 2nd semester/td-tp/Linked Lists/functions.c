@@ -18,10 +18,11 @@
     }
      
      void print(struct node *head){
+       printf("\n");
      if (head ==NULL) printf("the list is empty");
         struct node* ptr=head;
         while (ptr!=NULL)
-        {  printf("%d ",ptr->value); 
+        {  printf(" %d ",ptr->value); 
            ptr=ptr->next; 
          }}
       int nbroc(struct node *head,int X){
@@ -59,15 +60,6 @@
          ptr->next=*head;
          *head=ptr;
         }
-        void display(struct node *head){
-          printf("\n");
-          if (head==NULL) printf("list is empty");
-          else {
-            while (head!=NULL) {
-               printf("[%d] ", head->value);
-               head=head->next;
-          }}
-        }
 
      
   
@@ -89,7 +81,7 @@
          printf("%d\n",count(head));
          
         printf("%d\n",nbroc(head,2));
-        display(head);
+        print(head);
         
     return 0;
  }
