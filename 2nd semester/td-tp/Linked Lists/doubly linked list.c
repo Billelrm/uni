@@ -66,7 +66,7 @@ if (*head==NULL) {
           (*head)->previous=NULL; }
       }   
 
-      void deleteLast(struct node* head){ //not sure if it works or not//
+      void deleteLast(struct node* head){ 
         if (head==NULL) printf("the list is empty");
         else { 
            struct node* ptr=head;
